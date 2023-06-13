@@ -1,0 +1,1 @@
+th:style="'background-image: url(data:' + @{${#strings.replace(#strings.toUpperCase(#strings.substring(eachProduct.image.contentType, 6)),'/','') + ';base64,' + #strings.toString(eachProduct.image.data))} + ')'"
